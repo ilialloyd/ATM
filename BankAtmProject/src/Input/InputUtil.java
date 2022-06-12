@@ -10,10 +10,10 @@ public class InputUtil {
          return answer;
      }
 
-    public static int RequireNumber(String title){
+    public static double RequireNumber(String title){
         Scanner sc =new Scanner(System.in);
         System.out.println(title);
-        int number = sc.nextInt();
+        int number = (int)sc.nextDouble();
         return number;
     }
 }

@@ -1,7 +1,7 @@
 package Atm;
 
 import Input.AtmUtil;
-import Input.Menyu;
+import Input.*;
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Welcome to Scotia bank!");
         AtmUtil.passwordToEnter();
         while(true){
-            Menyu.SelectMenu();
+            Menu.SelectMenu();
         }
     }
 }

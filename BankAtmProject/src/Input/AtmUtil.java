@@ -4,16 +4,17 @@ public class AtmUtil {
     public static void passwordToEnter() {
         int password = 1994;
         while (true) {
-            int Inputpassword = (int)InputUtil.RequireNumber("Enter the Password: ");
-            if (Inputpassword != password) {
+            int inputPassword = (int)InputUtil.RequireNumber("Enter the Password: ");
+            if (inputPassword != password) {
                 System.out.println("Wrong password. Try again!");
             }
-            if (Inputpassword == password) {
+            if (inputPassword == password) {
                 System.out.println("Successfully entered");
                 break;
             }
         }
     }
+
 
     private static int balance = 6000;
 
@@ -21,17 +22,17 @@ public class AtmUtil {
         return balance;
     }
 
-    public static void WithdrawMoney() {
+    public static void withDrawMoney() {
         System.out.println("Available Balance: " + balance + "$");
         while (true) {
-            int withdraw = (int) InputUtil.RequireNumber("Enter Amount you want to cash out: ");
+            int withDraw = (int) InputUtil.RequireNumber("Enter Amount you want to cash out: ");
 
 
-            if (withdraw > balance) {
+            if (withDraw > balance) {
                 System.out.println("Sufficient balance! ");
-            } else if (withdraw <= balance) {
-                balance = balance - withdraw;
-                System.out.println("You have received " + withdraw + " Thank you for visiting us!");
+            } else if (withDraw <= balance) {
+                balance = balance - withDraw;
+                System.out.println("You have received " + withDraw + " Thank you for visiting us!");
                 System.out.println("Your current balance: " + balance + "$");
                 break;
             } else

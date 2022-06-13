@@ -11,7 +11,7 @@ public class Menu {
         if (menu == 1) {
             System.out.println("Your current balance is " + AtmUtil.getBalance() + "$");
         } else if (menu == 2) {
-            AtmUtil.WithdrawMoney();
+            AtmUtil.withDrawMoney();
         } else if (menu == 3) {
             AtmUtil.Deposit();
         } else if (menu == 4) {
